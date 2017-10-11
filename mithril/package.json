@@ -1,0 +1,25 @@
+{
+  "name": "mithril_sandbox",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run server:dev",
+    "server:dev": "cross-env NODE_ENV=development webpack-dev-server -d",
+    "build": "cross-env NODE_ENV=production webpack src/index.js -p"
+  },
+  "dependencies": {
+    "mithril": "^1.1.1",
+    "mitt": "^1.1.2",
+    "webpack": "^2.3.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "cross-env": "^4.0.0",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
